@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receipt Design </title>
     <style>
-        .reciept-container{
+        .receipt-container{
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
@@ -26,19 +26,19 @@
             color: #990000;
         }
        
-        .reciept-detail{
+        .receipt-detail{
             display: flex;
             justify-content: center;
             margin: 20px 0px;
             flex-direction: column;
             padding-top: 20px;
         }
-        .reciept-detail-key{
+        .receipt-detail-key{
             color: grey;
             width: 30%;
            
         }
-        .reciept-detail-value{
+        .receipt-detail-value{
             font-weight: bold;
             color: black;
             border-bottom: dashed gray;
@@ -60,19 +60,19 @@
             bottom: -20px;
             transform: rotate(-10deg);
         }
-        .reciept{
+        .receipt{
             border-top: dashed gray;
             padding-top: 10px;
             color: black;
         }
-        .reciept-footer{
+        .receipt-footer{
             background-color: #1b3e0e;
             color: white;
         }
            /* Small Devices */
   
   @media screen and  (max-width: 600px) {
-    .reciept-detail {
+    .receipt-detail {
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -91,7 +91,7 @@
         margin-bottom: 0;
         margin-top: 40px;
       }
-      .reciept-footer{
+      .receipt-footer{
         background-color: #1b3e0e;
         color: white;
         padding:3px 30px 3px 30px;
@@ -100,7 +100,7 @@
   /* Normal Devices */
   
   @media screen and (min-width: 601px) and (max-width: 768px) {
-    .reciept-detail {
+    .receipt-detail {
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -119,7 +119,7 @@
         margin-bottom: 0;
         margin-top: 30px;
       }
-      .reciept-footer{
+      .receipt-footer{
         background-color: #1b3e0e;
         color: white;
         padding:3px 80px 3px 80px;
@@ -129,7 +129,7 @@
 /*Tablet Devices */
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .reciept-detail {
+    .receipt-detail {
         display: flex;
         flex-direction: row;
     }
@@ -146,7 +146,7 @@
         margin-bottom: 0;
         margin-top: 50px;
       }
-      .reciept-footer{
+      .receipt-footer{
         background-color: #1b3e0e;
         color: white;
         padding:0px 120px 0px 120px;
@@ -155,7 +155,7 @@
 }
 
 @media screen and (min-width:993px) and (max-width: 1200px) {
-    .reciept-detail {
+    .receipt-detail {
         display: flex;
         flex-direction: row;
     }
@@ -172,7 +172,7 @@
         margin-bottom: 0;
         margin-top: 90px;
       }
-      .reciept-footer{
+      .receipt-footer{
         background-color: #1b3e0e;
         color: white;
         padding:0px 130px 0px 130px;
@@ -183,7 +183,7 @@
 /* Dekstop device */
 
 @media screen and  (max-width: 1200px) {
-    .reciept-detail {
+    .receipt-detail {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -196,21 +196,21 @@
 <body>
 
     <div class="reciept-container">
-        <div class="img1"><img src="3.png" style="width:102%;"><hr/>
-            <h1 class="body">Payment Reciept</h1>
-               <div class="reciept-detail">
-               <div class="reciept-detail-key">Reciept No:</div>
-               <div class="reciept-detail-value">10000</div>
-               <div class="reciept-detail-key">Amount:</div>
-               <div class="reciept-detail-value">20,000/-</div>
-               <div class="reciept-detail-key">Payment Date:</div>
-               <div class="reciept-detail-value">8 jan 2024</div>
-               <div class="reciept-detail-key">Payment Mode:</div>
-               <div class="reciept-detail-value">UPI</div>
-               <img src="5.png"id="stmp"><br><br><br><br>
+        <div class="img1"><img src="img-1.png" style="width:102%;"><hr/>
+            <h1 class="body">Payment Receipt</h1>
+               <div class="receipt-detail">
+               <div class="receipt-detail-key">Receipt No:</div>
+               <div class="receipt-detail-value">10000</div>
+               <div class="receipt-detail-key">Amount:</div>
+               <div class="receipt-detail-value">20,000/-</div>
+               <div class="receipt-detail-key">Payment Date:</div>
+               <div class="receipt-detail-value">8 jan 2024</div>
+               <div class="receipt-detail-key">Payment Mode:</div>
+               <div class="receipt-detail-value">UPI</div>
+               <img src="img-2.png"id="stmp"><br><br><br><br>
                <p class="Accountant-Signature">Accountant Signature</p>
-               <p class="reciept">This is a computer generated reciept and does not require any signature </p>
-               <div class="reciept-footer">
+               <p class="receipt">This is a computer generated receipt and does not require any signature </p>
+               <div class="receipt-footer">
                    <p >Thank you for your Payment.</p>
    
                </div>
